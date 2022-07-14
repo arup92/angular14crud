@@ -17,6 +17,15 @@
       "comment": "Good Condition",
       "date": "2022-07-14T18:30:00.000Z",
       "id": 2
+    },
+    {
+      "productName": "Pinapple",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 0.99,
+      "comment": "Fresh Pinapple",
+      "date": "2022-07-08T18:30:00.000Z",
+      "id": 3
     }
   ],
   "comments": [
