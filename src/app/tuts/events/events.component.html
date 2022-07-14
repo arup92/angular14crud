@@ -1,0 +1,6 @@
+<h1>{{title}}</h1>
+
+<mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Keyup Event</mat-label>
+    <input type="email" #keyupBox matInput placeholder="" (keyup)="getData(keyupBox.value)">
+</mat-form-field>

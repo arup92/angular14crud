@@ -25,12 +25,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { CrudAppComponent } from './crud-app/crud-app.component';
+import { TutsComponent } from './tuts/tuts.component';
+import { EventsComponent } from './tuts/events/events.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogComponent
+    DialogComponent,
+    CrudAppComponent,
+    TutsComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
