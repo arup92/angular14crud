@@ -1,0 +1,13 @@
+<!-- Form -->
+<h2>Send data from sibling-a component to sibling-b</h2>
+
+<mat-form-field class="example-full-width" appearance="fill" style="margin-right: 10px;">
+    <input matInput #ipSend placeholder="Type Something" value="">
+</mat-form-field>
+
+<button mat-raised-button (click)="sendaMessage(ipSend.value)">Send Message</button>
+
+<!-- Display component -->
+<div class="container" style="margin-top: 20px;">
+    <app-sibling-b></app-sibling-b>
+</div>

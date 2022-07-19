@@ -28,6 +28,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { CrudAppComponent } from './crud-app/crud-app.component';
 import { TutsComponent } from './tuts/tuts.component';
 import { EventsComponent } from './tuts/events/events.component';
+import { SiblingAComponent } from './tuts/transfer/sibling-a/sibling-a.component';
+import { SiblingBComponent } from './tuts/transfer/sibling-b/sibling-b.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { EventsComponent } from './tuts/events/events.component';
     DialogComponent,
     CrudAppComponent,
     TutsComponent,
-    EventsComponent
+    EventsComponent,
+    SiblingAComponent,
+    SiblingBComponent
   ],
   imports: [
     BrowserModule,
