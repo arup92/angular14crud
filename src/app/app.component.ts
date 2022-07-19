@@ -22,6 +22,10 @@ export class AppComponent implements OnInit {
   openDialog() {
     const dialogRef = this._dialog.open(DialogComponent, {
       width: '30%'
-    });
-  }
+    }).afterClosed().subscribe(
+      val => {
+        if (val === "save") {
+        }
+      });
+  };
 }

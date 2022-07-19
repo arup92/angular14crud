@@ -1,10 +1,10 @@
 {
   "productList": [
     {
-      "productName": "Apple",
+      "productName": "Apples",
       "category": "Fruits",
       "freshness": "Brand New",
-      "price": 14,
+      "price": 12,
       "comment": "This is fresh apple",
       "date": "2022-07-07T18:30:00.000Z",
       "id": 1
@@ -35,6 +35,15 @@
       "comment": "Fresh Potato",
       "date": "2022-07-07T18:30:00.000Z",
       "id": 4
+    },
+    {
+      "productName": "Potato",
+      "category": "Vegitables",
+      "freshness": "Second Hand",
+      "price": 0.21,
+      "comment": "Fresh Potato",
+      "date": "2022-07-07T18:30:00.000Z",
+      "id": 5
     }
   ],
   "comments": [

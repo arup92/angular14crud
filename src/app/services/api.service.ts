@@ -18,4 +18,12 @@ export class ApiService {
   getProduct(): Observable<any> {
     return this._httpClient.get(this.apiUrl);
   }
+
+  putProduct(data: any, id: number) {
+    return this._httpClient.put<any>(this.apiUrl + id, data);
+  }
+
+  deleteProduct(id: number) {
+    return this._httpClient.delete<any>(this.apiUrl + id);
+  }
 }

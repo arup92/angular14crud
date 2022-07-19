@@ -40,11 +40,14 @@ export class CrudAppComponent implements OnInit {
         }
       });
   }
-
   editProduct(row: any) {
     this._dialog.open(DialogComponent, {
       width: '30%',
       data: row
+    }).afterClosed().subscribe(val => {
+      if (val === "update") {
+        this.getAllProducts();
+      }
     });
   }
 
