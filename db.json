@@ -26,6 +26,15 @@
       "comment": "Fresh Pinapple",
       "date": "2022-07-08T18:30:00.000Z",
       "id": 3
+    },
+    {
+      "productName": "Potato",
+      "category": "Vegitables",
+      "freshness": "Brand New",
+      "price": 0.21,
+      "comment": "Fresh Potato",
+      "date": "2022-07-07T18:30:00.000Z",
+      "id": 4
     }
   ],
   "comments": [

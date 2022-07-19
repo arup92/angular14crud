@@ -1,3 +1,6 @@
+# Start JSON Server
+`json-server --watch db.json`
+
 # Angular14crud
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.

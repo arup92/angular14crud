@@ -7,6 +7,7 @@ import { TransferService } from 'src/app/services/transfer.service';
   styleUrls: ['./sibling-a.component.scss']
 })
 export class SiblingAComponent implements OnInit {
+  ipSend = "";
 
   constructor(private _interactionService: TransferService) { }
 
@@ -15,6 +16,10 @@ export class SiblingAComponent implements OnInit {
 
   sendaMessage(msg: string) {
     this._interactionService.sendMessage(msg);
+  }
+
+  clearInput() {
+    this.ipSend = "";
   }
 
 }
