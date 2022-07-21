@@ -30,6 +30,10 @@ import { TutsComponent } from './tuts/tuts.component';
 import { EventsComponent } from './tuts/events/events.component';
 import { SiblingAComponent } from './tuts/transfer/sibling-a/sibling-a.component';
 import { SiblingBComponent } from './tuts/transfer/sibling-b/sibling-b.component';
+import { ViewChildComponent } from './tuts/view-child/view-child.component';
+import { ChildComponent } from './tuts/view-child/child/child.component';
+import { ToParentComponent } from './tuts/to-parent/to-parent.component';
+import { Child2Component } from './tuts/to-parent/child2/child2.component';
 
 
 @NgModule({
@@ -40,7 +44,11 @@ import { SiblingBComponent } from './tuts/transfer/sibling-b/sibling-b.component
     TutsComponent,
     EventsComponent,
     SiblingAComponent,
-    SiblingBComponent
+    SiblingBComponent,
+    ViewChildComponent,
+    ChildComponent,
+    ToParentComponent,
+    Child2Component
   ],
   imports: [
     BrowserModule,

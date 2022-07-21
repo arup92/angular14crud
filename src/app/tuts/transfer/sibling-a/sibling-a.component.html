@@ -2,7 +2,7 @@
 <h2>Send data from sibling-a component to sibling-b</h2>
 
 <mat-form-field class="example-full-width" appearance="fill" style="margin-right: 10px;">
-    <input matInput [(ngModel)]="ipSend" #ee placeholder="Type Something" value="">
+    <input matInput [(ngModel)]="ipSend" #ee placeholder="Type Something" (keyup)="sendaMessage(ipSend)" value="">
 </mat-form-field>
 
 <button mat-raised-button (click)="sendaMessage(ipSend)" style="margin-right: 10px;">Send Message</button>
