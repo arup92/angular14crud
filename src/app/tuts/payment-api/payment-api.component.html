@@ -1,0 +1,62 @@
+<div class="payment-details-container" *ngFor="let item of apiData">
+    <div class="item-list">
+        <div class="item">
+            <div class="item-header">
+                <p>Hospital Name</p>
+            </div><!-- /.item-header -->
+            <div class="item-content">
+                <p>{{item.hospital_name}}</p>
+            </div><!-- /.item-content -->
+        </div><!-- /.item -->
+    </div><!-- /.item-list -->
+
+    <div class="item-list">
+        <div class="item">
+            <div class="item-header">
+                <p>Patient</p>
+            </div><!-- /.item-header -->
+            <div class="item-content">
+                <p class="item-title">UHID: </p>
+                <p>{{item.reg_no}}</p>
+            </div><!-- /.item-content -->
+
+            <div class="item-content">
+                <p class="item-title">Name: </p>
+                <p>{{item.patient_name}}, {{item.p_sex}}</p>
+            </div><!-- /.item-content -->
+        </div><!-- /.item -->
+    </div><!-- /.item-list -->
+
+    <div class="item-list">
+        <div class="item">
+            <div class="item-header">
+                <p>Order No</p>
+            </div><!-- /.item-header -->
+            <div class="item-content">
+                <p>{{item.order_no}}</p>
+            </div><!-- /.item-content -->
+        </div><!-- /.item -->
+    </div><!-- /.item-list -->
+    
+    <div class="item-list">
+        <div class="item">
+            <div class="item-header">
+                <p>Amount</p>
+            </div><!-- /.item-header -->
+            <div class="item-content">
+                <p>{{item.amount}}</p>
+            </div><!-- /.item-content -->
+        </div><!-- /.item -->
+    </div><!-- /.item-list -->
+    
+    <div class="item-list">
+        <div class="item">
+            <div class="item-header">
+                <p>Next</p>
+            </div><!-- /.item-header -->
+            <div class="item-content">
+                <p><button mat-raised-button color="primary" (click)="openDialog()">Next</button></p>
+            </div><!-- /.item-content -->
+        </div><!-- /.item -->
+    </div><!-- /.item-list -->
+</div><!-- /.payment-details-container -->

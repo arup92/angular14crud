@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
@@ -34,6 +35,8 @@ import { ViewChildComponent } from './tuts/view-child/view-child.component';
 import { ChildComponent } from './tuts/view-child/child/child.component';
 import { ToParentComponent } from './tuts/to-parent/to-parent.component';
 import { Child2Component } from './tuts/to-parent/child2/child2.component';
+import { PaymentApiComponent } from './tuts/payment-api/payment-api.component';
+import { PDetailsDialogComponent } from './tuts/payment-api/p-details-dialog/p-details-dialog.component';
 
 
 @NgModule({
@@ -48,7 +51,9 @@ import { Child2Component } from './tuts/to-parent/child2/child2.component';
     ViewChildComponent,
     ChildComponent,
     ToParentComponent,
-    Child2Component
+    Child2Component,
+    PaymentApiComponent,
+    PDetailsDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +74,8 @@ import { Child2Component } from './tuts/to-parent/child2/child2.component';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
