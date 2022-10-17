@@ -9,10 +9,18 @@ export class PaymentApiService {
 
   constructor(private _httpClient: HttpClient) { }
 
-  apiUrl: string = "http://localhost:8081/search_patient/878787";
-  //apiUrl: string = "https://mocki.io/v1/b1e64b7a-438e-45b4-8cb1-12db542499fb ";
+  customUrl: string = "";
+  apiUrl: string = "http://localhost:8081";
+  paymentOrderPath: string = this.apiUrl + "/search_payment/878787";
+  paymentOrderDetailsPath: string = this.apiUrl + "/search_order/";
 
-  getPaymentData(): Observable<any> {
-    return this._httpClient.get(this.apiUrl);
+  getPaymentDataService(): Observable<any> {
+    return this._httpClient.get(this.paymentOrderPath);
+  }
+
+  getPaymentOrderDetailsService(orderNo: string): Observable<any> {
+    this.customUrl = this.paymentOrderDetailsPath + orderNo;
+
+    return this._httpClient.get(this.customUrl);
   }
 }

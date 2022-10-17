@@ -55,7 +55,12 @@
                 <p>Next</p>
             </div><!-- /.item-header -->
             <div class="item-content">
-                <p><button mat-raised-button color="primary" (click)="openDialog()">Next</button></p>
+                <ng-template [ngIf]="actionBtn == 1" [ngIfElse]="elseBlock">
+                    <button mat-raised-button color="primary" (click)="openDialog()">Pay</button>
+                </ng-template>
+                <ng-template #elseBlock>
+                    <button mat-raised-button color="primary">View Receipt</button>
+                </ng-template>
             </div><!-- /.item-content -->
         </div><!-- /.item -->
     </div><!-- /.item-list -->
