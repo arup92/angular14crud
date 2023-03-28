@@ -37,6 +37,9 @@ import { ToParentComponent } from './tuts/to-parent/to-parent.component';
 import { Child2Component } from './tuts/to-parent/child2/child2.component';
 import { PaymentApiComponent } from './tuts/payment-api/payment-api.component';
 import { PDetailsDialogComponent } from './tuts/payment-api/p-details-dialog/p-details-dialog.component';
+import { RxjsComponent } from './rxjs/rxjs/rxjs.component';
+import { ObservableComponent } from './rxjs/observable/observable.component';
+import { CustomObservableComponent } from './rxjs/custom-observable/custom-observable.component';
 
 
 @NgModule({
@@ -53,7 +56,10 @@ import { PDetailsDialogComponent } from './tuts/payment-api/p-details-dialog/p-d
     ToParentComponent,
     Child2Component,
     PaymentApiComponent,
-    PDetailsDialogComponent
+    PDetailsDialogComponent,
+    RxjsComponent,
+    ObservableComponent,
+    CustomObservableComponent
   ],
   imports: [
     BrowserModule,

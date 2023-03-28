@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CrudAppComponent } from './crud-app/crud-app.component';
+import { CustomObservableComponent } from './rxjs/custom-observable/custom-observable.component';
+import { ObservableComponent } from './rxjs/observable/observable.component';
+import { RxjsComponent } from './rxjs/rxjs/rxjs.component';
 import { EventsComponent } from './tuts/events/events.component';
 import { PaymentApiComponent } from './tuts/payment-api/payment-api.component';
 import { ToParentComponent } from './tuts/to-parent/to-parent.component';
@@ -10,6 +13,12 @@ import { ViewChildComponent } from './tuts/view-child/view-child.component';
 
 const routes: Routes = [
   { path: "crud", component: CrudAppComponent },
+  {
+    path: "rxjs", component: RxjsComponent, children: [
+      { path: "observable", component: ObservableComponent },
+      { path: "customobservable", component: CustomObservableComponent }
+    ]
+  },
   {
     path: "tuts", component: TutsComponent, children: [
       { path: "events", component: EventsComponent },
